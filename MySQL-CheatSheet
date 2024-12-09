@@ -14,7 +14,7 @@ USE db_name
 DROP DATABASE db_name;
 
 # Create DB table
-CREATE TABLE table_name (
+CREATE TABLE IF NOT EXISTS table_name (
   colonne1 type1,
   colonne2 type2,
   ...
