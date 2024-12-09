@@ -4,6 +4,9 @@ CREATE USER 'admin'@'localhost' IDENTIFIED BY 'the_secure_password';
 # Create DB
 CREATE DATABASE db_name;
 
+# List DB
+SHOW DATABASES;
+
 # Use DB
 USE db_name
 
