@@ -1,0 +1,49 @@
+# Create user
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'the_secure_password';
+
+# Create DB
+CREATE DATABASE db_name;
+
+# Use DB
+USE db_name
+
+# Delete DB
+DROP DATABASE db_name;
+
+# Create DB table
+CREATE TABLE table_name (
+  colonne1 type1,
+  colonne2 type2,
+  ...
+);
+
+# Insert data into DB table
+INSERT INTO table (colonne1, colonne2) 
+VALUES ('valeur1', 'valeur2');
+
+# Update data into DB table
+UPDATE table_name 
+SET colonne1 = 'new_value' 
+WHERE condition;
+
+# Delete data into DB table
+DELETE FROM table_name WHERE condition;
+
+# Get data
+SELECT * FROM table_name;
+
+# Limit data
+SELECT * FROM table_name LIMIT <number>;
+
+# Sort data
+SELECT * FROM table_name ORDER BY colonne ASC/DESC;
+
+# Count data
+SELECT COUNT(column_name) FROM table_name;
+
+# Join data
+SELECT * FROM table_name1 JOIN table_name2 USING(column_name);
+
+
+# Quit MySQL
+EXIT;
