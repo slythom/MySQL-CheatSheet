@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS table_name (
   ...
 );
 
-# List table(s)
+# List DB table(s)
 SHOW TABLES;
 
 # Insert data into DB table
