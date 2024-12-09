@@ -13,6 +13,11 @@ USE db_name
 # Delete DB
 DROP DATABASE db_name;
 
+# Grant DB permissions to a MySQL user
+GRANT ALL PRIVILEGES ON db_name.* TO 'admin'@'localhost';
+  # Apply changes
+  FLUSH PRIVILEGES;
+
 # Create DB table
 CREATE TABLE IF NOT EXISTS table_name (
   colonne1 type1,
