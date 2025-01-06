@@ -14,7 +14,7 @@ USE db_name
 DROP DATABASE db_name;
 
 # Grant DB permissions to a MySQL user
-GRANT ALL PRIVILEGES ON db_name.* TO 'admin'@'localhost';
+GRANT ALL PRIVILEGES ON 'db_name'.* TO 'admin'@'localhost';
   # Apply changes
   FLUSH PRIVILEGES;
 
